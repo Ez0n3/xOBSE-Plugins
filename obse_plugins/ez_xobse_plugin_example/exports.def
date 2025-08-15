@@ -1,0 +1,4 @@
+LIBRARY "ez_xobse_plugin_example"
+EXPORTS
+OBSEPlugin_Query
+OBSEPlugin_Load

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "..\..\common\common.vcxproj", "{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "obse", "..\..\obse\obse\obse.vcxproj", "{01B76B21-F851-436E-ACEA-64FA03BE8C59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "xOBSE-core", "xOBSE-core", "{7C80FDAF-3C97-4146-B774-1AAF2E6ED6EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ez_xobse_plugin_example", "ez_xobse_plugin_example.vcxproj", "{A442A3A6-1F1E-43AF-B5DF-A8987F80D2A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Debug|x86.ActiveCfg = Debug|Win32
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Debug|x86.Build.0 = Debug|Win32
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Release|x86.ActiveCfg = Release|Win32
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Release|x86.Build.0 = Release|Win32
+		{01B76B21-F851-436E-ACEA-64FA03BE8C59}.Debug|x86.ActiveCfg = Debug|Win32
+		{01B76B21-F851-436E-ACEA-64FA03BE8C59}.Debug|x86.Build.0 = Debug|Win32
+		{01B76B21-F851-436E-ACEA-64FA03BE8C59}.Release|x86.ActiveCfg = Release|Win32
+		{01B76B21-F851-436E-ACEA-64FA03BE8C59}.Release|x86.Build.0 = Release|Win32
+		{A442A3A6-1F1E-43AF-B5DF-A8987F80D2A0}.Debug|x86.ActiveCfg = Debug|Win32
+		{A442A3A6-1F1E-43AF-B5DF-A8987F80D2A0}.Debug|x86.Build.0 = Debug|Win32
+		{A442A3A6-1F1E-43AF-B5DF-A8987F80D2A0}.Release|x86.ActiveCfg = Release|Win32
+		{A442A3A6-1F1E-43AF-B5DF-A8987F80D2A0}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6} = {7C80FDAF-3C97-4146-B774-1AAF2E6ED6EE}
+		{01B76B21-F851-436E-ACEA-64FA03BE8C59} = {7C80FDAF-3C97-4146-B774-1AAF2E6ED6EE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F909AEB-7FD3-4ABB-961C-439AADD2C48D}
+	EndGlobalSection
+EndGlobal
