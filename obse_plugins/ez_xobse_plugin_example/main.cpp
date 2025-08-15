@@ -66,7 +66,7 @@ bool Cmd_PluginExampleFunctionsTest_Execute(COMMAND_ARGS)
 	return true;
 }
 
-#endif
+#endif // RUNTIME
 
 // Define the example test bool function, including a description of what it does
 // Note: Outside of the RUNTIME def, for the editor also
@@ -267,81 +267,3 @@ bool OBSEPlugin_Load(const OBSEInterface* obse)
 }; // Stop: extern "C"
 
 // =======================================
-
-
-
-
-
-// from plugin_example
-//OBSECommandTableInterface* g_cmdTable;
-//const CommandInfo* g_TFC;
-
-
-/*
-// FROM plugin_api.h???
-// ================================
-// Test
-// ================================
-
-#ifdef RUNTIME
-bool Cmd_ExamplePlugin_PluginTest_Execute(COMMAND_ARGS)
-{
-	_MESSAGE("plugintest");
-
-	*result = 42;
-
-	Console_Print("plugintest running");
-
-	return true;
-}
-#endif
-
-DEFINE_COMMAND_PLUGIN(ExamplePlugin_PluginTest, "prints a string", 0, 0, NULL)
-
-// ================================
-// Message Handler
-// ================================
-
-void MessageHandler(OBSEMessagingInterface::Message* msg)
-{
-	switch (msg->type)
-	{
-		case OBSEMessagingInterface::kMessage_LoadGame:
-			_MESSAGE("MessageHandler: Received load game message with file path %s", msg->data);
-			break;
-		case OBSEMessagingInterface::kMessage_SaveGame:
-			_MESSAGE("MessageHandler: Received save game message with file path %s", msg->data);
-			break;
-		case OBSEMessagingInterface::kMessage_PreLoadGame:
-			_MESSAGE("MessageHandler: Received pre load game message with file path %s", msg->data);
-			break;
-		case OBSEMessagingInterface::kMessage_PostLoadGame:
-			_MESSAGE("MessageHandler: Received post load game message", msg->data ? "Error/Unkwown" : "OK");
-			break;
-		case OBSEMessagingInterface::kMessage_PostLoad:
-			_MESSAGE("MessageHandler: Received post load plugins message");
-			break;
-		case OBSEMessagingInterface::kMessage_PostPostLoad:
-			_MESSAGE("MessageHandler: Received post post load plugins message");
-			break;
-		case OBSEMessagingInterface::kMessage_ExitGame:
-			_MESSAGE("MessageHandler: Received exit game message");
-			break;
-		case OBSEMessagingInterface::kMessage_ExitGame_Console:
-			_MESSAGE("MessageHandler: Received exit game via console qqq command message");
-			break;
-		case OBSEMessagingInterface::kMessage_ExitToMainMenu:
-			_MESSAGE("MessageHandler: Received exit game to main menu message");
-			break;
-		case OBSEMessagingInterface::kMessage_Precompile:
-			_MESSAGE("MessageHandler: Received precompile message with script at %08x", msg->data);
-			break;
-		case OBSEMessagingInterface::kMessage_RuntimeScriptError:
-			_MESSAGE("MessageHandler: Received runtime script error message %s", msg->data);
-			break;
-		default:
-			_MESSAGE("MessageHandler: Plugin Example received unknown message");
-			break;
-	}
-}
-*/
